@@ -281,7 +281,7 @@ var RegisterModel = function() {
 
             //Make ajax call to send email to the office
             $.ajax({
-                url: 'https://formspree.io/leandros.sardinas@shadeomatic.ca',
+                url: 'https://formspree.io/anya.pukhlenko@shadeomatic.ca',
                 method: 'POST',
                 data: self.toEmail(),
                 dataType: 'json'
@@ -297,7 +297,7 @@ var RegisterModel = function() {
                     var database = firebase.database();
                     database.goOnline();
                     database.ref('register').push(self.toEmail());
-                    databse.goOffline();
+                    database.goOffline();
                 } catch (error) {
                     console.log(error);
                 }
