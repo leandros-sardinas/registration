@@ -30,7 +30,8 @@ var languages = [{
     locations: 'Locations',
     sectionTitle: 'Register',
     eventName: 'Road Show 2017',
-    success: 'Thanks for registering, your spot has been saved',
+    homeMessage: 'Registration closes 5 days prior to each event',
+    success: 'Thanks for registering, your spot has been saved. Please print this page as a confirmation.',    
     error: 'An error has ocurred, please try again later',
     registeredLocations: 'Your locations'
 },
@@ -45,6 +46,7 @@ var languages = [{
     locations: 'Emplacements',
     sectionTitle: 'Registre',
     eventName: 'Road Show 2017',
+    homeMessage: 'Registration closes 5 days prior to each event',
     success: 'Merci pour votre inscription, votre place a été enregistrée',
     error: 'Un erreur est survenue, veuillez réessayer plus tard',
     registeredLocations: 'Vos localisations'

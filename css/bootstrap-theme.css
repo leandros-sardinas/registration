@@ -504,6 +504,24 @@ a:focus {
   padding: 40px 0;
 }
 
+.section-header {
+  margin-bottom: 40px;
+}
+
+.section-header-main {
+  border-bottom: solid 1px #ddd;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.section-header-note {
+  color: #666;
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+}
+
 .form label:not(.error):after {
   content: ' *';
   color: red;
