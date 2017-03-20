@@ -15,7 +15,7 @@ var showLocations = [
     new Location('Edmonton', 'April 21th', '5:00 PM', '10011 184 Street NW, Edmonton, AB  T5S 0C7', 'Courtyard by Marriott Edmonton West'),
     new Location('Winnipeg', 'April 24th', '5:00 PM', '1295 Ellice Ave., Winnipeg, MB  R3G 0N5', 'Homewood Suites by Hilton Winnipeg Airport Polo Park'),
     new Location('Montreal', 'April 26th', '5:00 PM', '7655, boul. Decarie, Montreal, QC  H4P 2H2', "Hotel Ruby Foo's"),
-    new Location('Dartmouth', 'April 27th', '1:30 PM', "20 St. Margaret's Bay Road, Halifax, NS  B3N 1J4", 'Best Western Plus Chocolate Lake Hotel'),
+    new Location('Halifax', 'April 27th', '1:30 PM', "250 St. Margaret's Bay Road, Halifax, NS  B3N 1J4", 'Best Western Plus Chocolate Lake Hotel'),
     new Location('Moncton', 'April 28th', '12:30 PM', '	700 Mapleton Road, Moncton, NB  E1G 0L7', 'Hampton Inn & Suites by Hilton Moncton')
 ];
 
