@@ -487,6 +487,9 @@ a:focus {
   background-position-y: 50%;
   padding-left: 125px; 
 }
+.title span {
+  display:block;
+}
 
 .sub-menu {
   margin-top: -28px;

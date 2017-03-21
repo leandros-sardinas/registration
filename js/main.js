@@ -40,16 +40,16 @@ var languages = [{
     schedule: 'Programme',
     register: 'Registre',
     title: '',
-    name: 'Prénom',    
+    name: 'Nom',    
     accountNumber: 'Numéro de compte',
-    emailAddress: 'Adresse e-mail',
+    emailAddress: 'Adresse du couriel',
     locations: 'Emplacements',
     sectionTitle: 'Registre',
     eventName: 'Road Show 2017',
-    homeMessage: 'Registration closes 5 days prior to each event',
-    success: 'Merci pour votre inscription, votre place a été enregistrée',
+    homeMessage: 'L’inscription se termine 5 jours avant chaque evenement',
+    success: 'Merci pour votre inscription, votre place a été enregistrée. Veuillez imprimer cette page comme confirmation',
     error: 'Un erreur est survenue, veuillez réessayer plus tard',
-    registeredLocations: 'Vos localisations'
+    registeredLocations: 'Vos endroits'
 }];
 
 var errorMessages = [{    
@@ -71,12 +71,12 @@ var errorMessages = [{
     step: $.validator.format( "Please enter a multiple of {0}." )
     },
     {
-	required: "Ce champ est obligatoire.",
-	remote: "Veuillez corriger ce champ.",
-	email: "Veuillez fournir une adresse électronique valide.",
-	url: "Veuillez fournir une adresse URL valide.",
-	date: "Veuillez fournir une date valide.",
-	dateISO: "Veuillez fournir une date valide (ISO).",
+	required: "Cet domaine est obligatoire",
+	remote: "Veuillez corriger cet domaine",
+	email: "Veuillez rentrer un valide  couriel",
+	url: "Veuillez rentrer une adresse valide URL",
+	date: "Veuillez renttrer une date valide",
+	dateISO: "Veuillez rentrer une date valide (ISO)",
 	number: "Veuillez fournir un numéro valide.",
 	digits: "Veuillez fournir seulement des chiffres.",	
 	equalTo: "Veuillez fournir encore la même valeur.",	
