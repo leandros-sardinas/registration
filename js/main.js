@@ -42,7 +42,7 @@ var languages = [{
     title: '',
     name: 'Nom',    
     accountNumber: 'Numéro de compte',
-    emailAddress: 'Adresse du couriel',
+    emailAddress: 'Addresse du couriel',
     locations: 'Emplacements',
     sectionTitle: 'Registre',
     eventName: 'Road Show 2017',
@@ -73,7 +73,7 @@ var errorMessages = [{
     {
 	required: "Cet domaine est obligatoire",
 	remote: "Veuillez corriger cet domaine",
-	email: "Veuillez rentrer un valide  couriel",
+	email: "Veuillez rentrer un valide couriel",
 	url: "Veuillez rentrer une adresse valide URL",
 	date: "Veuillez renttrer une date valide",
 	dateISO: "Veuillez rentrer une date valide (ISO)",
@@ -296,10 +296,8 @@ var RegisterModel = function() {
 
                 //Save to firebase
                 try {                    
-                    var database = firebase.database();
-                    database.goOnline();
-                    database.ref('register').push(self.toEmail());
-                    database.goOffline();
+                    var database = firebase.database();                    
+                    database.ref('register').push(self.toEmail());                    
                 } catch (error) {
                     console.log(error);
                 }
