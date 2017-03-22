@@ -27,6 +27,7 @@ var languages = [{
     name: 'Name',    
     accountNumber: 'Account Number',
     emailAddress: 'Email Address',
+    guests: 'Number of Attendees',
     locations: 'Locations',
     sectionTitle: 'Register',
     eventName: 'Road Show 2017',
@@ -43,6 +44,7 @@ var languages = [{
     name: 'Nom',    
     accountNumber: 'Numéro de compte',
     emailAddress: 'Addresse du couriel',
+    guests: 'Nombre de participants',
     locations: 'Emplacements',
     sectionTitle: 'Registre',
     eventName: 'Road Show 2017',
@@ -126,6 +128,7 @@ var RegisterModel = function() {
     this.name = ko.observable();    
     this.accountNumber = ko.observable();
     this.emailAddress = ko.observable();
+    this.guests = ko.observable(1);
     this.location = ko.observable();
     this.success = ko.observable(false);
     this.error = ko.observable(false);
@@ -249,7 +252,8 @@ var RegisterModel = function() {
             Name: self.name(),
             'Email Address': self.emailAddress(),
             'Account Number': self.accountNumber(),
-            Location: self.selectedLocation().location
+            Location: self.selectedLocation().location,
+            guests: self.guests()
         };
     };
 
@@ -306,7 +310,8 @@ var RegisterModel = function() {
                 self.inProgress(false);
                 self.name('');                
                 self.emailAddress('');
-                self.accountNumber('');                
+                self.accountNumber('');
+                self.guests(1);                
             });
         }
     };

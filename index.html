@@ -148,16 +148,27 @@
                                     data-bind="attr:{placeHolder: accountNumber}, value: $parent.accountNumber" 
                                     class="form-control" 
                                     required tabindex="9"/>
-                            </div>                                                  
+                            </div>
                         </div>
+
                         <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label for="guests" data-bind="text: guests"></label>
+                                <input type="number" name="guests" class="form-control" 
+                                    data-bind="attr: {placeHolder: guests}, value: $parent.guests"
+                                    min="1" max="50"
+                                    required tabindex="10" />
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12">
                             <div class="form-group">
                                 <label for="locations" data-bind="text: locations">                                
                                 </label>
                                 <select name="locations" id="locations"                                     
                                     class="form-control"
                                     data-bind="options: $parent.locations, optionsText: 'location', value: $parent.selectedLocation"
-                                    tabindex="10">
+                                    tabindex="11">
                                 </select>
                                 <p class="input-description">
                                     <strong data-bind="text: $parent.selectedLocation().title"></strong>
@@ -255,7 +266,7 @@
         <script src="js/vendor/knockout.js"></script>
         <script src="js/vendor/jquery.validate.min.js"></script>                
         <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
-        <script src="js/main.min.js"></script>
+        <script src="js/main20170322.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->        
         <script>
