@@ -5,10 +5,7 @@ var Location = function(location, date, time, address, title) {
     this.address = address;    
     this.title = title;
 };
-var showLocations = [
-    new Location('Windsor', 'April 10th 2017', '5:00 PM', '1855 Huron Church Road, Windsor, ON N9C 2L6', 'Holiday Inn & Suites Ambassador Bridge'),
-    new Location('London', 'April 11th', '5:00 PM', '591 Wellington Rd., London, ON N6C 4R3', 'Best Western Plus Lamplighter Inn & Conference Centre'),
-    new Location('GTA', 'April 12th', '5:00 PM', '90 Biscayne Crescent, Brampton, ON  L6W 4S1', 'Courtyard by Marriott Brampton Hotel & Convention Centre'),
+var showLocations = [    
     new Location('Kelowna', 'April 18th', '5:00 PM', '2170 Harvey Ave., Kelowna, BC  V1Y 6G8', 'Ramada Hotel & Conference Centre'),    
     new Location('Calgary', 'April 20th', '5:00 PM', '5940 Blackfoot Trail SE, Calgary, AB  T2H 2B5', 'Hotel Blackfoot'),
     new Location('Edmonton', 'April 21th', '5:00 PM', '10011 184 Street NW, Edmonton, AB  T5S 0C7', 'Courtyard by Marriott Edmonton West'),
