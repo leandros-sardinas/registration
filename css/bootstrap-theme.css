@@ -412,9 +412,12 @@ fieldset[disabled] .btn-danger.active {
   border-color: #dca7a7;
 }
 
-body {
+body {  
+  background-color: #ffffff;
+  color: #555555;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  line-height: 1.42857143;    
 }
 
 h1, h2, h3 {
